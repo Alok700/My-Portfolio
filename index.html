@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Alok Singh | Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Bootstrap CSS 
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> -->
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/css/bootstrap.min.css">
+  <!-- EmailJS SDK -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script type="text/javascript">
+    // Initialize EmailJS with YOUR_PUBLIC_KEY
+    (function() {
+      emailjs.init("wuRtZNu6YvG67nl1c");  // Replace with your actual public key
+    })();
+  </script>
+  <style>
+    body { font-family: 'Segoe UI', sans-serif; background: #f8f9fa; }
+
+
+
+.header-section {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      padding: 60px 10vw 40px 10vw;
+      background: #fff;
+    }
+    .header-content {
+      flex: 1 1 400px;
+      min-width: 300px;
+      padding-right: 3vw;
+    }
+    .header-content h1 {
+      font-size: 4rem;
+      margin: 0 0 10px 0;
+      font-weight: 850;
+      line-height: 0.95;
+      letter-spacing: -2px;
+    }
+    .highlight-orange {
+      color: #d58440;
+    }
+    .highlight-blue {
+      color: #1084e6;
+    }
+    .subtitle {
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: 18px;
+      color: #2562ae;
+    }
+    .intro {
+      font-size: 1.2rem;
+      margin-bottom: 24px;
+      color: #232e3b;
+    }
+    .header-photo {
+      flex: 1 1 250px;
+      min-width: 220px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .profile-pic {
+      width: 260px;
+      height: 260px;
+      object-fit: cover;
+      border-radius: 50%;
+      box-shadow: 0 4px 32px rgba(44, 85, 130, 0.18);
+      border: 4px solid #eaeaf1;
+      background: linear-gradient(135deg, #bdf0e0 60%, #ffe1cc 100%);
+    }
+
+
+
+
+    .navbar-brand span { color: #d58440; }
+    .section-title { color: #0051b8; font-size: 2rem; font-weight: 700; margin-bottom: 1.5rem; }
+    .section-bg { background: #fff; border-radius: 15px; box-shadow: 0 0 8px #d6d6d6; }
+    .footer { background: #1d1d1d; color: #fff; padding: 2em 0 1em 0; }
+    .footer a { color: #f9a826; }
+    .skill-bar { background-color: #e9ecef; height: 24px; border-radius: 12px; overflow: hidden; margin-bottom: 10px; }
+    .skill-level { height: 100%; color: #fff; text-align: right; padding-right: 12px; line-height: 24px; font-weight: bold; }
+    .contact-icon { width: 22px; }
+    .badge { font-size: 0.9em; }
+    .btn-gradient {
+      background: linear-gradient(to right, #008cff 60%, #ff7e5f);
+      color: #fff; border: none;
+    }
+    .btn-gradient:hover { filter: brightness(0.95); }
+    @media (max-width: 767px) {
+      .section-title { font-size: 1.3rem; }
+    }
+  </style>
+</head>
+<body>
+
+
+<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
+    <a class="navbar-brand font-weight-bold" href="#">Alok <span>Singh</span></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+        <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+      <!-- <a href="#contact" class="btn btn-gradient ml-4">Hire Me</a> -->
+    </div>
+  </nav>
+
+
+
+
+
+  <section class="header-section">
+    <div class="header-content">
+      <div>
+        <h1>
+          <span class="highlight-blue">Alok</span>
+          <span class="highlight-orange">Singh</span>
+        </h1>
+        <div class="subtitle">Web Developer & CSE Student</div>
+        <div class="intro">
+          Building smart, optimized web solutions using modern technologies.<br>
+          Passionate about creating user-friendly applications that solve real-world problems.
+        </div>
+      </div>
+    </div>
+    <div class="header-photo">
+      <div class="photo-container">
+        <img src="alokk.jpg" alt="Alok Singh" class="profile-pic" />
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ABOUT + EDUCATION -->
+  <section id="about" class="container mt-5 pb-4 section-bg">
+    <div class="row">
+      <div class="col-md-6 pt-4">
+        <div class="section-title">Personal Background</div>
+        <p>
+          I am <strong>Alok Singh</strong> from <strong>Kushinagar, Uttar Pradesh</strong>.<br>
+          B.Tech in Computer Science and Engineering (2022–2026) at Greater Noida Institute of Technology.<br>
+          I enjoy building intelligent, user-friendly web solutions and am passionate about full-stack development.<br>
+          Goal: build apps that solve real problems and provide exceptional user experience.<br>
+          I also enjoy exploring new technologies, contributing to open-source, and staying updated with web trends.
+        </p>
+      </div>
+      <div class="col-md-6 pt-4">
+        <div class="section-title">Education</div>
+        <ul class="list-unstyled">
+          <li>
+            <b>B.Tech in Computer Science and Engineering</b>
+            <br>Greater Noida Institute of Technology, GN <span class="badge badge-info">Pursuing</span>
+            <br>2022 – 2026
+          </li>
+          <li class="mt-2">
+            <b>Intermediate</b>
+            <br>PN National Public School, Gorakhpur <span class="badge badge-success">Completed</span>
+            <br>2022
+          </li>
+          <li class="mt-2">
+            <b>High School</b>
+            <br>PN National Public School, Gorakhpur <span class="badge badge-success">Completed</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="container mt-5 pb-4 section-bg">
+    <div class="section-title">Technical Skills</div>
+    <div class="row">
+      <div class="col-md-4">
+        <h5>Frontend Development</h5>
+        <div class="skill-bar"><div class="skill-level bg-primary" style="width:90%;">HTML 90%</div></div>
+        <div class="skill-bar"><div class="skill-level bg-danger" style="width:85%;">CSS 85%</div></div>
+        <div class="skill-bar"><div class="skill-level bg-warning" style="width:80%;">JavaScript 80%</div></div>
+        <div class="skill-bar"><div class="skill-level bg-info" style="width:75%;">React 75%</div></div>
+        <div class="skill-bar"><div class="skill-level bg-secondary" style="width:85%;">Bootstrap 85%</div></div>
+        <div class="skill-bar"><div class="skill-level bg-dark" style="width:90%;">Tailwind CSS 90%</div></div>
+      </div>
+      <div class="col-md-4">
+        <h5>Backend Development</h5>
+        <div class="skill-bar"><div class="skill-level bg-success" style="width:80%;">Node.js 80%</div></div>
+        <div class="skill-bar"><div class="skill-level bg-info" style="width:75%;">Express.js 75%</div></div>
+        <div class="skill-bar"><div class="skill-level bg-secondary" style="width:70%;">Java 70%</div></div>
+        <div class="skill-bar"><div class="skill-level bg-dark" style="width:65%;">C 65%</div></div>
+      </div>
+      <div class="col-md-4">
+        <h5>Database & Tools</h5>
+        <div class="skill-bar"><div class="skill-level bg-primary" style="width:80%;">MySQL 80%</div></div>
+        <div class="skill-bar"><div class="skill-level bg-success" style="width:75%;">MongoDB 75%</div></div>
+        <div class="skill-bar"><div class="skill-level bg-warning" style="width:90%;">MS Word 90%</div></div>
+      </div>
+    </div>
+    <div class="mt-4">
+      <h6>Technologies I Work With:</h6>
+      <div class="d-flex flex-wrap">
+        <span class="badge badge-light m-1">HTML5</span>
+        <span class="badge badge-light m-1">CSS3</span>
+        <span class="badge badge-light m-1">JavaScript</span>
+        <span class="badge badge-light m-1">React</span>
+        <span class="badge badge-light m-1">Node.js</span>
+        <span class="badge badge-light m-1">Express</span>
+        <span class="badge badge-light m-1">MongoDB</span>
+        <span class="badge badge-light m-1">MySQL</span>
+        <span class="badge badge-light m-1">Bootstrap</span>
+        <span class="badge badge-light m-1">Tailwind</span>
+        <span class="badge badge-light m-1">Java</span>
+        <span class="badge badge-light m-1">C</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services" class="container mt-5 pb-4 section-bg">
+    <div class="section-title">Services</div>
+    <div class="row">
+      <div class="col-md-4">
+        <h5>Web Development</h5>
+        <ul>
+          <li>Responsive Design</li>
+          <li>Modern UI/UX</li>
+          <li>Performance Optimization</li>
+          <li>Cross-browser Compatibility</li>
+        </ul>
+      </div>
+      <div class="col-md-4">
+        <h5>Frontend Development</h5>
+        <ul>
+          <li>React Applications</li>
+          <li>Interactive UI Components</li>
+          <li>State Management</li>
+          <li>Modern CSS Frameworks</li>
+        </ul>
+      </div>
+      <div class="col-md-4">
+        <h5>Backend Development</h5>
+        <ul>
+          <li>RESTful APIs</li>
+          <li>Database Design</li>
+          <li>Server Architecture</li>
+          <li>Authentication Systems</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="container mt-5 pb-4 section-bg">
+    <div class="section-title">Featured Projects</div>
+    <div class="row">
+      <div class="col-md-6">
+        <h5>Travel Management System</h5>
+        <p>A comprehensive travel management platform optimizing travel routes using GIS and remote sensing.</p>
+        <ul>
+          <li>Interactive travel maps</li>
+          <li>Real-time travel suggestions</li>
+          <li>Tourist POI locator</li>
+          <li>Environmental monitoring</li>
+          <li>Eco-tourism support tools</li>
+        </ul>
+        <small><b>Tech:</b> HTML, CSS, JavaScript, Node.js, Google Maps API, OpenStreetMap</small>
+      </div>
+      <div class="col-md-6">
+        <h5>Weather Management System</h5>
+        <p>A real-time weather app for live updates, forecasting, disaster alerts, and weather history.</p>
+        <ul>
+          <li>Location-based live weather reports</li>
+          <li>Comprehensive forecasting</li>
+          <li>Disaster alerts system</li>
+          <li>Weather history storage</li>
+          <li>Farmer and traveler tools</li>
+        </ul>
+        <small><b>Tech:</b> HTML, CSS, JavaScript, Bootstrap, Node.js, OpenWeatherMap API</small>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="container mt-5 mb-4 pb-4 section-bg">
+    <div class="section-title">Get In Touch</div>
+    <div class="row">
+      <div class="col-md-6">
+        <p>I'm always open to discussing new opportunities, projects, or just having a friendly chat about technology!</p>
+        <ul class="list-unstyled">
+          <li><img src="https://img.icons8.com/ios-glyphs/30/000000/mail.png" alt="mail" class="contact-icon"> Email: <a href="mailto:salok8529@gmail.com">salok8529@gmail.com</a></li>
+          <li><img src="https://img.icons8.com/material-outlined/24/000000/phone.png" alt="phone" class="contact-icon"> Phone: +91 6307509416</li>
+          <li><img src="https://img.icons8.com/ios-filled/24/000000/marker.png" alt="location" class="contact-icon"> Location: Noida - 201307, UP, India</li>
+        </ul>
+      </div>
+      <div class="col-md-6">
+        <form id="contactForm">
+          <input class="form-control mb-2" type="text" placeholder="Your Name" required>
+          <input class="form-control mb-2" type="email" placeholder="Email Address" required>
+          <textarea class="form-control mb-2" placeholder="Message" required></textarea>
+          <button class="btn btn-gradient">Send Message</button>
+        </form>
+        <div id="formMsg" class="mt-3"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer mt-4">
+    <div class="container d-flex flex-column flex-md-row justify-content-between">
+      <div>
+        <strong>Alok Singh</strong><br>
+        Web Developer & CSE Student passionate about creating innovative solutions and beautiful user experiences.
+      </div>
+      <div>
+        <strong>Quick Links</strong><br>
+        Home | About | Skills | Projects | Contact
+      </div>
+      <div>
+        <strong>Get In Touch</strong><br>
+        <a href="mailto:salok8529@gmail.com">salok8529@gmail.com</a><br>
+        +91 6307509416<br>
+        Noida - 201307, UP, India
+      </div>
+    </div>
+    <div class="container text-center mt-3">
+      Made with &hearts; by Alok Singh © 2025
+    </div>
+  </footer>
+
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- EmailJS Form Handler -->
+  <script type="text/javascript">
+    document.getElementById('contactForm').onsubmit = function(e) {
+      e.preventDefault();
+      emailjs.sendForm('service_uwryznw', 'template_cbl58u9', this)
+        .then(function(response) {
+          document.getElementById('formMsg').innerHTML =
+            '<div class="alert alert-success mt-3">Message sent! Thank you for contacting me.</div>';
+        }, function(error) {
+          document.getElementById('formMsg').innerHTML =
+            '<div class="alert alert-danger mt-3">Message failed. Please try again!</div>';
+        });
+      this.reset();
+    };
+  </script>
+  <!--Bootstrap JS, JQuery
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.min.js"></script>
+  <script>
+    // Optional: Simple alert for contact form
+    document.getElementById('contactForm').onsubmit = function(e) {
+      e.preventDefault();
+      document.getElementById('formMsg').innerHTML = '<div class="alert alert-success">Thank you for reaching out! (Form not actually submitted — add EmailJS or similar for real email support.)</div>';
+      this.reset();
+    };
+  </script> -->
+</body>
+</html>
